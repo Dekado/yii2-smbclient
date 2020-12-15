@@ -14,7 +14,7 @@
     "require": {
         "yiisoft/yii2": "~2.0.0",
         "ext-smbclient": "*",
-        "ext-libsmbclient": "*",
+        "ext-libsmbclient": "*"
     },
     "autoload": {
         "psr-4": {
