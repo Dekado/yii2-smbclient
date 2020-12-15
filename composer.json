@@ -12,9 +12,7 @@
         }
     ],
     "require": {
-        "yiisoft/yii2": "~2.0.0",
-        "ext-smbclient": "*",
-        "ext-libsmbclient": "*"
+        "yiisoft/yii2": "~2.0.0"
     },
     "autoload": {
         "psr-4": {
