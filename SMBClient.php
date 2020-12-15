@@ -107,8 +107,7 @@ class SMBClient extends BaseObject
             if($this->state_errno() == self::ERROR_DIRECTORY_EXISTS) {
                 return true;
             }
-
-            \Yii::info('! Model number '.$this->id.': error '. $e->getMessage());
+            
             return false;
         }
 
