@@ -60,7 +60,7 @@ class SMBClient extends BaseObject
      */
     public function opendir($uri)
     {
-        return \smbclient_opendir($this->state, self::DIR_ROOT.$uri);
+        return \smbclient_opendir($this->state, $this->dirRoot.$uri);
     }
 
     /**
@@ -90,7 +90,7 @@ class SMBClient extends BaseObject
      */
     public function unlink($uri)
     {
-        return \smbclient_unlink($this->state, self::DIR_ROOT.$uri);
+        return \smbclient_unlink($this->state, $this->dirRoot.$uri);
     }
 
     /**
@@ -102,7 +102,7 @@ class SMBClient extends BaseObject
     public function mkdir($uri)
     {
         try {
-            return \smbclient_mkdir($this->state, self::DIR_ROOT.$uri);
+            return \smbclient_mkdir($this->state, $this->dirRoot.$uri);
         } catch (\Exception $e) {
             if($this->state_errno() == self::ERROR_DIRECTORY_EXISTS) {
                 return true;
@@ -121,12 +121,12 @@ class SMBClient extends BaseObject
      */
     public function rmdir($uri)
     {
-        return \smbclient_rmdir($this->state, self::DIR_ROOT.$uri);
+        return \smbclient_rmdir($this->state, $this->dirRoot.$uri);
     }
 
     public function stat($uri)
     {
-        return \smbclient_stat($this->state, self::DIR_ROOT.$uri);
+        return \smbclient_stat($this->state, $this->dirRoot.$uri);
     }
 
     public function fstat(resource $file)
@@ -141,7 +141,7 @@ class SMBClient extends BaseObject
      */
     public function create($uri)
     {
-        return \smbclient_creat($this->state, self::DIR_ROOT.$uri);
+        return \smbclient_creat($this->state, $this->dirRoot.$uri);
     }
 
     /**
@@ -151,7 +151,7 @@ class SMBClient extends BaseObject
      */
     public function open($uri)
     {
-        return \smbclient_open($this->state, self::DIR_ROOT.$uri, 'r');
+        return \smbclient_open($this->state, $this->dirRoot.$uri, 'r');
     }
 
     /**
