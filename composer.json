@@ -2,6 +2,7 @@
     "name": "dekado/yii2-smbclient",
     "description": "Wrapper for libsmbclient",
     "type": "yii2-extension",
+    "version": "1.0.0",
     "keywords": ["yii2","extension","smbclient"],
     "license": "MIT",
     "authors": [
@@ -16,6 +17,11 @@
     "autoload": {
         "psr-4": {
             "dekado\\smbclient\\": ""
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "master"
         }
     }
 }
