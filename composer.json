@@ -1,0 +1,21 @@
+{
+    "name": "dekado/yii2-smbclient",
+    "description": "Wrapper for libsmbclient",
+    "type": "yii2-extension",
+    "keywords": ["yii2","extension","smbclient"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sergey Mishin",
+            "email": "famine2@yandex.ru"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "~2.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "dekado\\smbclient\\": ""
+        }
+    }
+}
