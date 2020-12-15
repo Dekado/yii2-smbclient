@@ -8,7 +8,7 @@ Yii2 SBM Client
 
 Installation
 ------------
-
+Для работы требуются раширения php: smbclient и libsmbclient.
 Предпочитаемый способ установки - [composer](http://getcomposer.org/download/).
 
 Запустите:
